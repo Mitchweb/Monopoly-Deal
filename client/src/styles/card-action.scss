@@ -1,0 +1,59 @@
+.card__action-card--color-0 {
+  background-color: $color-money-1;
+
+  .card-value {
+    background-color: $color-money-1;
+  }
+}
+
+.card__action-card--color-1 {
+  background-color: $color-money-2;
+
+  .card-value {
+    background-color: $color-money-2;
+  }
+}
+
+.card__action-card--color-2 {
+  background-color: $color-money-3;
+
+  .card-value {
+    background-color: $color-money-3;
+  }
+}
+
+.card__action-card--color-3 {
+  background-color: $color-money-4;
+
+  .card-value {
+    background-color: $color-money-4;
+  }
+}
+
+.card__action-card--color-4 {
+  background-color: $color-money-5;
+
+  .card-value {
+    background-color: $color-money-5;
+  }
+}
+
+.card-circle__action-card {
+  align-items: center;
+  background-color: #fff;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.action-card__title {
+  font-size: 1.5em;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  &.title--small {
+    font-size: 1em;
+  }
+}

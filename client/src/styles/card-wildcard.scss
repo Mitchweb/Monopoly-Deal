@@ -1,0 +1,194 @@
+.property-wildcard__contents {
+  height: calc(100% - 20px);
+  position: relative;
+}
+
+.property-wildcard__name {
+  align-items: center;
+  border: 1px solid #333;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.5em;
+  height: 23px;
+  justify-content: center;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 1px;
+  text-align: center;
+  text-transform: uppercase;
+
+  .text--big {
+    display: block;
+    font-size: 2em;
+    position: relative;
+    top: -2px;
+    width: 100%;
+  }
+}
+
+.property-wildcard__name--bottom {
+  position: absolute;
+  bottom: -5px;
+  transform: rotate(180deg);
+  width: calc(100% - 10px);
+}
+
+.property-wildcard__name__set--0 {
+  background-color: $color-property-brown;
+  color: #fff;
+}
+
+.property-wildcard__name__set--1 {
+  background-color: $color-property-light_blue;
+  color: #333;
+}
+
+.property-wildcard__name__set--2 {
+  background-color: $color-property-pink;
+  color: #333;
+}
+
+.property-wildcard__name__set--3 {
+  background-color: $color-property-orange;
+  color: #333;
+}
+
+.property-wildcard__name__set--4 {
+  background-color: $color-property-red;
+  color: #fff;
+}
+
+.property-wildcard__name__set--5 {
+  background-color: $color-property-yellow;
+  color: #333;
+}
+
+.property-wildcard__name__set--6 {
+  background-color: $color-property-green;
+  color: #fff;
+}
+
+.property-wildcard__name__set--7 {
+  background-color: $color-property-blue;
+  color: #fff;
+}
+
+.property-wildcard__name__set--8 {
+  background-color: $color-property-station;
+  color: #fff;
+}
+
+.property-wildcard__name__set--9 {
+  background-color: $color-property-utility;
+  color: #333;
+}
+
+.card__property-wildcard .card-value--bottom {
+  transform: rotate(180deg);
+}
+
+.property-wildcard__rent-container {
+  align-items: center;
+  display: flex;
+  height: 92px;
+}
+
+.card__property-wildcard {
+  .property-card__rent {
+    display: inline-block;
+    width: 50%;
+
+    &:first-child {
+      transform: rotate(180deg);
+    }
+
+    & > li {
+      margin-left: 10px;
+      margin-right: 15px;
+    }
+  }
+}
+
+
+.set--0 .rent__index::after {
+  background-color: $color-property-brown;
+}
+
+.set--1 .rent__index::after {
+  background-color: $color-property-light_blue;
+}
+
+.set--2 .rent__index::after {
+  background-color: $color-property-pink;
+}
+
+.set--3 .rent__index::after {
+  background-color: $color-property-orange;
+}
+
+.set--4 .rent__index::after {
+  background-color: $color-property-red;
+}
+
+.set--5 .rent__index::after {
+  background-color: $color-property-yellow;
+}
+
+.set--6 .rent__index::after {
+  background-color: $color-property-green;
+}
+
+.set--7 .rent__index::after {
+  background-color: $color-property-blue;
+}
+
+.set--8 .rent__index::after {
+  background-color: $color-property-station;
+}
+
+.set--9 .rent__index::after {
+  background-color: $color-property-utility;
+}
+
+.property-wildcard__all {
+  align-items: flex-end;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.property-wildcard__all-box {
+  align-items: center;
+  background: linear-gradient(to right, $color-property-brown 0px, $color-property-brown 9px, $color-property-light_blue 10px, $color-property-light_blue 19px, $color-property-pink 20px, $color-property-pink 29px, $color-property-orange 30px, $color-property-orange 39px, $color-property-red 40px, $color-property-red 49px, $color-property-yellow 50px, $color-property-yellow 59px, $color-property-green 60px, $color-property-green 69px, $color-property-blue 70px, $color-property-blue 79px, $color-property-station 80px, $color-property-station 89px, $color-property-utility 90px, $color-property-utility 98px);
+  border: 1px solid #333;
+  display: flex;
+  font-size: 0.8em;
+  height: 40px;
+  justify-content: center;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  text-transform: uppercase;
+  width: calc(100% - 10px);
+
+  & > div {
+    background-color: #fff;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    width: 100%;
+  }
+}
+
+.property-wildcard__all-subtext {
+  font-size: 0.9em;
+  line-height: 1.35;
+  padding: 10px;
+}

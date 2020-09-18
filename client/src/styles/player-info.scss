@@ -1,0 +1,207 @@
+.players {
+  background-color: rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  width: calc(100% - 20px);
+}
+
+.player {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  width: 20%;
+}
+
+.player--current {
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+.player__stats {
+  align-items: flex-end;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2px;
+  position: relative;
+  bottom: 2px;
+  text-align: center;
+}
+
+.player__stats__name {
+  font-size: 0.9em;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  text-align: center;
+  width: 100%;
+}
+
+.player__stats__money {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+
+  .stats__card {
+    background-color: #e6f5df;
+  }
+}
+
+.player__stats__hand {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+
+  .stats__card {
+    background-color: #f5dede;
+  }
+}
+
+.stats__card {
+  align-items: center;
+  background-color: #fff;
+  color: #333;
+  border-radius: 2px;
+  display: flex;
+  font-size: 0.8em;
+  height: 15px;
+  justify-content: center;
+  margin-right: 3px;
+  width: 10px;
+}
+
+.stats__number {
+  font-size: 1.1em;
+  position: relative;
+  top: 1px;
+}
+
+.player__properties__row {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  height: 20px;
+  padding: 2px 3px;
+  position: relative;
+
+  .row-mini-card {
+    border-radius: 2px;
+    display: inline-block;
+    height: 15px;
+    margin-right: 4px;
+    position: relative;
+    width: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.set--0 {
+      background-color: $color-property-brown;
+      color: #fff;
+    }
+
+    &.set--1 {
+      background-color: $color-property-light_blue;
+      color: #333;
+    }
+
+    &.set--2 {
+      background-color: $color-property-pink;
+      color: #333;
+    }
+
+    &.set--3 {
+      background-color: $color-property-orange;
+      color: #333;
+    }
+
+    &.set--4 {
+      background-color: $color-property-red;
+      color: #fff;
+    }
+
+    &.set--5 {
+      background-color: $color-property-yellow;
+      color: #333;
+    }
+
+    &.set--6 {
+      background-color: $color-property-green;
+      color: #fff;
+    }
+
+    &.set--7 {
+      background-color: $color-property-blue;
+      color: #fff;
+    }
+
+    &.set--8 {
+      background-color: $color-property-station;
+      color: #fff;
+    }
+
+    &.set--9 {
+      background-color: $color-property-utility;
+      color: #333;
+    }
+
+    &.set--all {
+      background: linear-gradient(
+        to bottom,
+        $color-property-brown 0%,
+        $color-property-brown 10%,
+        $color-property-light_blue 11%,
+        $color-property-light_blue 20%,
+        $color-property-pink 21%,
+        $color-property-pink 30%,
+        $color-property-orange 31%,
+        $color-property-orange 40%,
+        $color-property-red 41%,
+        $color-property-red 50%,
+        $color-property-yellow 51%,
+        $color-property-yellow 60%,
+        $color-property-green 61%,
+        $color-property-green 70%,
+        $color-property-blue 71%,
+        $color-property-blue 80%,
+        $color-property-station 81%,
+        $color-property-station 90%,
+        $color-property-utility 91%,
+        $color-property-utility 100%
+      );
+    }
+
+    & > span {
+      font-size: 0.7em;
+      position: absolute;
+      left: 1px;
+      top: 3px;
+    }
+  }
+  
+  .row-house-hotel {
+    background-color: transparent;
+    color: #fff;
+    font-size: 0.8em;
+    height: 19px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    width: 13px;
+
+    &.hotel {
+      background-color: rgb(236, 11, 25);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    &.house {
+      background-color: rgb(35, 175, 30);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    & > span {
+      display: inline-block;
+      margin-top: 3px;
+    }
+  }
+}

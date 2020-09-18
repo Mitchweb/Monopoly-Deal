@@ -1,0 +1,28 @@
+$color-property-brown: #673632;
+$color-property-light_blue: #9ed3f5;
+$color-property-pink: #ff56db;
+$color-property-orange: #ff9900;
+$color-property-red: #e41515;
+$color-property-yellow: #ffff00;
+$color-property-green: #08862f;
+$color-property-blue: #1656A6;
+$color-property-station: #181A1C;
+$color-property-utility: #def3ef;
+
+$color-money-1: #fbeba9;
+$color-money-2: #eccbb0;
+$color-money-3: #cedcad;
+$color-money-4: #c6deec;
+$color-money-5: #b784b5;
+$color-money-10: #ecaf00;
+
+@mixin button {
+  appearance: none;
+  background-color: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}

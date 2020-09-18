@@ -1,0 +1,144 @@
+.lobby {
+  background-color: rgb(206, 230, 209);
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+
+  h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+    padding-top: 20px;
+  }
+
+  form {
+    border: 1px solid rgb(182, 209, 185);
+    border-radius: 3px;
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+
+  input,
+  button {
+    @include button;
+    background: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  input[type='submit'] {
+    background: linear-gradient(to bottom, rgb(8, 172, 8) 0%, rgb(7, 163, 7));
+    color: #fff;
+    margin-bottom: 0;
+  }
+
+  button {
+    background: linear-gradient(to bottom, rgb(236, 54, 53) 0%, rgb(213, 29, 42));
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .e-in {
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: 1.5em;
+    line-height: 1.35;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+  .after-join {
+    margin-bottom: 6px;
+    margin-top: 25px;
+  }
+
+  .jip {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+}
+
+.jip-modal {
+  background-color: rgb(206, 230, 209);
+  height: 100vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  z-index: 10000;
+
+  h3 {
+    font-size: 2em;
+    margin-bottom: 80px;
+    margin-top: 80px;
+  }
+
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  select {
+    @include button;
+    background: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  button {
+    @include button;
+    background: linear-gradient(to bottom, rgb(236, 54, 53) 0%, rgb(213, 29, 42));
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.pause-modal {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  z-index: 100000000;
+
+  h1 {
+    margin-bottom: 60px;
+    margin-top: 200px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 60px;
+  }
+
+  h3 {
+    color: #ff0000;
+    font-size: 1.5em;
+  }
+}

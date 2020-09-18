@@ -1,0 +1,241 @@
+.game-screen {
+  background-color: rgb(206, 230, 209);
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.just-say-no {
+  -webkit-animation: fade-out 1s ease 2.25s;
+  animation: fade-out 1s ease 2.25s;
+  background-color: $color-money-4;
+  border: 3px solid #fff;
+  border-radius: 3px;
+  color: #333;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 90px;
+  padding: 40px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 40px;
+  text-align: center;
+  z-index: 100000;
+}
+
+.modal-wildcards-button {
+  @include button;
+  background: linear-gradient(to bottom, rgb(20, 147, 197) 0%, rgb(19, 135, 180));
+  color: #fff;
+  display: block;
+  font-size: 0.9em;
+  height: 30px;
+  margin-bottom: 7px;
+  margin-left: auto;
+  margin-right: 10px;
+  text-transform: uppercase;
+  width: 120px;
+
+  &[disabled] {
+    background: #999;
+  }
+}
+
+.card-tray {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.hand-money-block {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: calc(100% - 20px);
+
+  .text--big {
+    font-size: 1.35em;
+  }
+
+  .text--red {
+    color: rgb(236, 54, 53);
+  }
+}
+
+.hand-money-button {
+  @include button;
+  background: linear-gradient(to bottom, rgb(236, 54, 53) 0%, rgb(213, 29, 42));
+  color: #fff;
+  display: inline-block;
+  font-size: 0.9em;
+  height: 30px;
+  text-transform: uppercase;
+  width: 60px;
+}
+
+.hand,
+.money,
+.properties {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 200px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: auto;
+
+  .card-wrapper {
+    display: inline-block;
+    flex-shrink: 0;
+
+    &:first-child > .card {
+      margin-left: 10px;
+    }
+
+    &:last-child > .card {
+      margin-right: 10px;
+    }
+  }
+
+  .card {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+.properties--modified {
+  align-items: flex-start;
+  height: auto;
+}
+
+.cheeky-margin-top {
+  margin-top: 80px;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.modal--card > .card {
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 130px;
+  transform: rotate(0deg) scale(2.25);
+  transform-origin: center center;
+  transition: transform 0.3s;
+
+  &.card--rotated {
+    transform: rotate(180deg) scale(2.25);
+    transform-origin: center center;
+  }
+}
+
+.modal--card__button-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  bottom: 70px;
+  left: 0;
+  right: 0;
+  width: 280px;
+}
+
+.modal--card__button {
+  @include button;
+  color: #fff;
+  font-size: 1.5em;
+  height: 50px;
+  margin-left: 8px;
+  margin-right: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-transform: uppercase;
+  width: max-content;
+
+  &[disabled] {
+    display: none;
+  }
+}
+
+select {
+  @include button;
+  background-color: #fff;
+  font-size: 1.2em;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  &[disabled] {
+    display: none;
+  }
+}
+
+.button--money {
+  background: linear-gradient(to bottom, rgb(20, 147, 197) 0%, rgb(19, 135, 180));
+}
+
+.button--property {
+  background: linear-gradient(to bottom, rgb(8, 172, 8) 0%, rgb(7, 163, 7));
+}
+
+.button--rotate {
+  background: linear-gradient(to bottom, rgb(119, 119, 119) 0%, rgb(100, 100, 100));
+}
+
+.button--rotate--highlighted {
+  border: 3px solid #fff;
+}
+
+.button--play {
+  background: linear-gradient(to bottom, rgb(8, 172, 8) 0%, rgb(7, 163, 7));
+}
+
+.button--cancel {
+  background: linear-gradient(to bottom, rgb(236, 54, 53) 0%, rgb(213, 29, 42));
+  font-size: 1.2em;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  width: 100px;
+}

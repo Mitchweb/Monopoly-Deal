@@ -1,0 +1,73 @@
+.top-bar {
+  align-items: center;
+  background-color: #eee;
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+
+.top-bar__deck {
+  & > div {
+    display: inline-block;
+    font-size: 1.2em;
+    & > span {
+      margin-left: 4px;
+      position: relative;
+      bottom: 5px;
+    }
+  }
+}
+
+.top-bar__deck-icon {
+  background-color: #fff;
+  border: 1px solid #999;
+  border-radius: 3px;
+  height: 24px;
+  margin-right: 4px;
+  position: relative;
+  left: 4px;
+  top: 4px;
+  width: 16px;
+
+  &::before {
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 3px;
+    content: ' ';
+    height: 24px;
+    position: absolute;
+    left: -6px;
+    top: -6px;
+    width: 16px;
+  }
+}
+
+.top-bar__end-turn {
+  @include button;
+  background: linear-gradient(to bottom, rgb(236, 54, 53) 0%, rgb(213, 29, 42));
+  color: #fff;
+  display: inline-block;
+  font-size: 0.9em;
+  height: 30px;
+  text-transform: uppercase;
+  width: 80px;
+
+  &[disabled] {
+    background: #999;
+  }
+}
+
+.end-turn--highlighted::after {
+  background-color: rgba(0, 0, 0, 0.5);
+  content: ' ';
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 40px;
+  z-index: 10000;
+}

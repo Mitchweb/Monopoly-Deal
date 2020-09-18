@@ -1,0 +1,143 @@
+.card__rent-card {
+  background-color: $color-money-1;
+
+  .card-value {
+    background-color: $color-money-1;
+  }
+}
+
+.rent-card--all {
+  background-color: $color-money-3;
+
+  .card-value {
+    background-color: $color-money-3;
+  }
+
+  .rent-card__decoration-top,
+  .rent-card__decoration-bottom {
+    background: linear-gradient(to right, $color-property-brown 0px, $color-property-brown 5px, $color-property-light_blue 6px, $color-property-light_blue 13px, $color-property-pink 14px, $color-property-pink 21px, $color-property-orange 22px, $color-property-orange 29px, $color-property-red 30px, $color-property-red 37px, $color-property-yellow 39px, $color-property-yellow 45px, $color-property-green 46px, $color-property-green 53px, $color-property-blue 54px, $color-property-blue 61px, $color-property-station 62px, $color-property-station 69px, $color-property-utility 70px, $color-property-utility 80px);
+  }
+}
+
+.card-circle__rent-card {
+  border-style: solid;
+  position: relative;
+}
+
+.rent-card__decoration-top {
+  border: 3px solid #333;
+  border-bottom: none;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  height: 40px;
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  width: 80px;
+
+  &.set--0 {
+    background-color: $color-property-brown;
+  }
+
+  &.set--1 {
+    background-color: $color-property-light_blue;
+  }
+
+  &.set--2 {
+    background-color: $color-property-pink;
+  }
+
+  &.set--3 {
+    background-color: $color-property-orange;
+  }
+
+  &.set--4 {
+    background-color: $color-property-red;
+  }
+
+  &.set--5 {
+    background-color: $color-property-yellow;
+  }
+
+  &.set--6 {
+    background-color: $color-property-green;
+  }
+
+  &.set--7 {
+    background-color: $color-property-blue;
+  }
+
+  &.set--8 {
+    background-color: $color-property-station;
+  }
+
+  &.set--9 {
+    background-color: $color-property-utility;
+  }
+}
+
+.rent-card__decoration-bottom {
+  border: 3px solid #333;
+  border-top: none;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: -3px;
+  left: -3px;
+  width: 80px;
+
+  &.set--0 {
+    background-color: $color-property-brown;
+  }
+
+  &.set--1 {
+    background-color: $color-property-light_blue;
+  }
+
+  &.set--2 {
+    background-color: $color-property-pink;
+  }
+
+  &.set--3 {
+    background-color: $color-property-orange;
+  }
+
+  &.set--4 {
+    background-color: $color-property-red;
+  }
+
+  &.set--5 {
+    background-color: $color-property-yellow;
+  }
+
+  &.set--6 {
+    background-color: $color-property-green;
+  }
+
+  &.set--7 {
+    background-color: $color-property-blue;
+  }
+
+  &.set--8 {
+    background-color: $color-property-station;
+  }
+
+  &.set--9 {
+    background-color: $color-property-utility;
+  }
+}
+
+.rent-card__title {
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #333;
+  border-radius: 50%;
+  display: flex;
+  font-size: 1.5em;
+  height: 60px;
+  justify-content: center;
+  position: relative;
+  width: 60px;
+  z-index: 10;
+}
